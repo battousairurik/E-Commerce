@@ -1,0 +1,97 @@
+/*	PROJECT NAME: Login and Registration pages
+	VERSION: 1.0
+	MODULE & VERSION: Apache/2.4.23 (Win64) PHP/5.6.25
+	PROGRAMMERS:JESUS_LEON
+				FREDRICK_ONDIEKI
+				BRYAN_PELLEGRIM
+				DENNIS_WITT
+	DATE: AUGUST 31, 2017
+	SYNOPSIS:	This module is the design of the pages. Here every item is modifed with its attributes for a better user experience. 
+	REFERENCES: http://www.inmotionhosting.com/support/edu/website-design/using-php-and-mysql/php-insert-database
+				https://www.youtube.com/watch?v=C--mu07uhQw
+				https://www.youtube.com/watch?v=FgSysHTsb6A
+*/
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	
+}
+body {
+	font-size: 120%;
+	background: #F8F8FF;
+	
+}
+/*THIS CONTROLS THE HEADERS SETTINGS*/
+.header {
+	width: 30%;
+	margin: 100px auto 10px;
+	color: white;
+	background: #4CAF50;
+	text-align: center;
+	border: 1px solid #02ff74;
+	border-bottom: none;
+	border-radius: 10px 10px 10px 10px;
+	padding: 20px;
+	box-shadow: 0px 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+/*THIS CONTROLS THE FORMS SETTIGNS*/
+form, .content {
+	width: 30%;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid #02ff74;
+	background: rgba(19, 35, 47, 0.9); 
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+/*THIS CONTROLS THE INPUT BOXES*/
+.input-group {
+	margin: 10px 0px 10px 0px;
+	border: 0px solid #02ff74;
+}
+
+.input-group label {
+	display: block;
+	text-align: left;
+	margin: 10px;
+	color: #c1c9c7;
+
+}
+
+.input-group input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	background: rgba(160, 179, 176, 0.25);
+	color: #c1c9c7;
+}
+.btn{
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+	background: #4CAF50;
+	border: none;
+	border-radius: 5px;
+
+}
+.error {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
+.success {
+	color: #3c763d; 
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+	margin-bottom: 20px;
+}
