@@ -1,3 +1,11 @@
+<!--
+Project Title: E-Commerce
+Version: 1.3
+Authors: Fredrick Ondieki, Michael Weaver
+Date Updated: 11/4/2018
+Description: Admin side bar navigation
+-->
+
 <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
 <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav side-nav">

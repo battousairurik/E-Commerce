@@ -1,3 +1,11 @@
+<!--
+Project Title: E-Commerce
+Version: 1.3
+Authors: Fredrick Ondieki, Michael Weaver
+Date Updated: 11/4/2018
+Description: Server connection screen
+-->
+
 <!--This module is the connection to the database
 and start a session from the session_start
 -->

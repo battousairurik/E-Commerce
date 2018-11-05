@@ -1,3 +1,10 @@
+<!--
+Project Title: E-Commerce
+Version: 1.3
+Authors: Fredrick Ondieki, Michael Weaver
+Date Updated: 11/4/2018
+Description: Registration page handling
+-->
 <!--First, Make a connection to the Database-->
 <?php include('server.php') ?>
 <!DOCTYPE html>

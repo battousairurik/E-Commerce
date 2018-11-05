@@ -1,4 +1,10 @@
-
+<!--
+Project Title: E-Commerce
+Version: 1.3
+Authors: Fredrick Ondieki, Michael Weaver
+Date Updated: 11/4/2018
+Description: Product helper
+-->
 <?php include_once('server.php') ?>
 <?php include_once('db.php') ?>
 

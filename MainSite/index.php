@@ -1,4 +1,10 @@
-
+<!--
+Project Title: E-Commerce
+Version: 1.3
+Authors: Fredrick Ondieki, Michael Weaver
+Date Updated: 11/4/2018
+Description: Home page for the main site
+-->
 <?php include("Includes/Front/Header.php");?>
 
 <!-- Page Content -->
