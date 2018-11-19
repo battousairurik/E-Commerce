@@ -1,11 +1,10 @@
 <!--
 Project Title: E-Commerce
-Version: 1.3
+Version: 1.4
 Authors: Fredrick Ondieki, Michael Weaver
-Date Updated: 11/4/2018
-Description: Admin page to manage categories
+Date Updated: 11/11/2018
+Description:
 -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,86 +33,78 @@ Description: Admin page to manage categories
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
 <body>
 
-<?php include("_AdminNavBar.php");?>
+<div id="wrapper">
 
-<h1 class="page-header">
-  Product Categories
+    <?php include("admin_navigation.php") ?>
 
-</h1>
+    <div id="page-wrapper">
 
-
-<div class="col-md-4">
-    
-    <form action="" method="post">
-    
-        <div class="form-group">
-            <label for="category-title">Title</label>
-            <input type="text" class="form-control">
-        </div>
-
-        <div class="form-group">
-            
-            <input type="submit" class="btn btn-primary" value="Add Category">
-        </div>      
+        <div class="container-fluid">
 
 
-    </form>
+            <h1 class="page-header">
+                Product Categories
 
+            </h1>
+            <?php require_once("../config.php"); ?>
+            <?php show_categories_in_admin(); ?>
 
-</div>
-
-
-<div class="col-md-8">
-
-    <table class="table">
-            <thead>
-
-        <tr>
-            <th>id</th>
-            <th>Title</th>
-        </tr>
-            </thead>
-
-
-    <tbody>
-        <tr>
-            <td>20</td>
-            <td>Example Title</td>
-        </tr>
-    </tbody>
-
-        </table>
-
-</div>
-
-
+            <!--<div class="col-md-4">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="category-title">Title</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary" value="Add Category">
+                    </div>
+                </form>
             </div>
-            <!-- /.container-fluid -->
+            <div class="col-md-8">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Title</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>20</td>
+                        <td>Example Title</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>-->
+
 
         </div>
-        <!-- /#page-wrapper -->
+        <!-- /.container-fluid -->
 
     </div>
-    <!-- /#wrapper -->
+    <!-- /#page-wrapper -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+</div>
+<!-- /#wrapper -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
 
-    <!-- Morris Charts JavaScript -->
-    <script src="js/plugins/morris/raphael.min.js"></script>
-    <script src="js/plugins/morris/morris.min.js"></script>
-    <script src="js/plugins/morris/morris-data.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+<script src="js/plugins/morris/raphael.min.js"></script>
+<script src="js/plugins/morris/morris.min.js"></script>
+<script src="js/plugins/morris/morris-data.js"></script>
 
 </body>
 

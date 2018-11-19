@@ -1,9 +1,9 @@
 <!--
 Project Title: E-Commerce
-Version: 1.3
+Version: 1.4
 Authors: Fredrick Ondieki, Michael Weaver
-Date Updated: 11/4/2018
-Description: Error display page
+Date Updated: 11/11/2018
+Description:
 -->
 <?php  
 if (count($errors) > 0) : ?>

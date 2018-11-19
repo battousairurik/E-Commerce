@@ -1,11 +1,3 @@
-<!--
-Project Title: E-Commerce
-Version: 1.3
-Authors: Fredrick Ondieki, Michael Weaver
-Date Updated: 11/4/2018
-Description: Server connection screen
--->
-
 <!--This module is the connection to the database
 and start a session from the session_start
 -->
@@ -85,7 +77,7 @@ if (isset($_POST['login_user'])) {
         if (mysqli_num_rows($results) == 1) {
             $_SESSION['username'] = $username;
             $_SESSION['success'] = "You are now logged in";
-            header('location: Admin');
+            header('location: admin/admin_index.php');
         }else {
             array_push($errors, "Wrong username/password. Please try again.");
         }

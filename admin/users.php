@@ -1,11 +1,10 @@
 <!--
 Project Title: E-Commerce
-Version: 1.3
+Version: 1.4
 Authors: Fredrick Ondieki, Michael Weaver
-Date Updated: 11/4/2018
-Description: Admin page to manage users
+Date Updated: 11/11/2018
+Description:
 -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,129 +33,82 @@ Description: Admin page to manage users
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
 <body>
+<?php require_once("config.php"); ?>
+<div id="wrapper">
 
-<?php include("_AdminNavBar.php");?>
+    <?php include("admin_navigation.php") ?>
 
+    <div id="page-wrapper">
 
-
-        <div id="page-wrapper">
-
-            <div class="container-fluid">
-
-
-
-                    <div class="col-lg-12">
-                      
-
-                        <h1 class="page-header">
-                            Users
-                         
-                        </h1>
-                          <p class="bg-success">
-                            <?php echo $message; ?>
-                        </p>
-
-                        <a href="add_user.php" class="btn btn-primary">Add User</a>
+        <div class="container-fluid">
 
 
-                        <div class="col-md-12">
-
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Id</th>
-                                        <th>Photo</th>
-                                        <th>Username</th>
-                                        <th>First Name</th>
-                                        <th>Last Name </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                <?php foreach($users as $user): ?>
-
-                                    <tr>
-
-                                        <td>2</td>
-                                        <td><img class="admin-user-thumbnail user_image" src="placehold.it/62x62" alt=""></td>
-                                        
-                                        <td>Rico
-                                              <div class="action_links">
-
-                                                <a href="">Delete</a>
-                                                <a href="">Edit</a>
-                    
-                                                
-                                            </div>
-                                        </td>
-                                        
-                                        
-                                        <td>Edwin</td>
-                                       <td>Diaz</td>
-                                    </tr>
+            <div class="col-lg-12">
 
 
-                                <?php endforeach; ?>
+                <h1 class="page-header">
+                    Users
+
+                </h1>
+                <p class="bg-success">
+                    <?php echo $message; ?>
+                </p>
+
+                <a href="add_user.php" class="btn btn-primary">Add User</a>
 
 
-                                    
-                                    
-                                </tbody>
-                            </table> <!--End of Table-->
-                        
+                <div class="col-md-12">
 
-                        </div>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Photo</th>
+                            <th>Username</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                        </tr>
+                        </thead>
 
+                        <tbody>
+                        <?php display_users() ?>
 
-
-
-
-
-
-
-
-
-                        
-                    </div>
-    
+                        </tbody>
+                    </table> <!--End of Table-->
 
 
-
-
-
-
-
-
-
-
+                </div>
 
 
             </div>
-            <!-- /.container-fluid -->
+
 
         </div>
-        <!-- /#page-wrapper -->
+        <!-- /.container-fluid -->
 
     </div>
-    <!-- /#wrapper -->
+    <!-- /#page-wrapper -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+</div>
+<!-- /#wrapper -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
 
-    <!-- Morris Charts JavaScript -->
-    <script src="js/plugins/morris/raphael.min.js"></script>
-    <script src="js/plugins/morris/morris.min.js"></script>
-    <script src="js/plugins/morris/morris-data.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+<script src="js/plugins/morris/raphael.min.js"></script>
+<script src="js/plugins/morris/morris.min.js"></script>
+<script src="js/plugins/morris/morris-data.js"></script>
 
 </body>
 
